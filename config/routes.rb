@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :pets
   get '/random', to:'pets#random'
   get '/search', to:'pets#search'
+
 end
