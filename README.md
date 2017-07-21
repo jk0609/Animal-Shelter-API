@@ -14,7 +14,7 @@ A basic API set up to return data about pets. Supports basic CRUD endpoints (ind
   2. Species (Cat or Dog)
   3. Breed
   4. Age in integer format
-* PUT 'pets/:pet_id?PARAMS' - Updates information on the identified pet based on passed parameters. Not all params are required.
+* PUT 'pets/:pet_id?PARAMS' - Updates information on the identified pet based on passed parameters. Parameters are the same as POST request but not all params are required.
 * DELETE 'pets/:pet_id' - Removes the identified pet from the database.
 * GET '/random' - Will return a single random pet's data.
 * GET '/search?name=QUERY' - Will search the database for an object with a name attribute equal to the given query and return it if found. Returns detailed error messages if not found.
