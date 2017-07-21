@@ -25,6 +25,11 @@ class PetsController < ApplicationController
     @pet.destroy
   end
 
+  def random
+    @pet. Pet.find(rand(Pet.first.id..Pet.last.id))
+    json_response(@pet)  
+  end
+
 private
 
   def pet_params
