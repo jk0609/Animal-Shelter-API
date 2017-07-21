@@ -3,6 +3,6 @@ FactoryGirl.define do
     name "TestPet"
     species "TestSpecies"
     breed "TestBreed"
-    age "TestAge"
+    age 500
   end
 end
