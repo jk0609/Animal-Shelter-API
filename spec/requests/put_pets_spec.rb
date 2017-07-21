@@ -7,7 +7,7 @@ describe 'update pet', :type=>:request do
   }
 
   it 'returns the pet name' do
-    expect(JSON.parse(response.body)['name']).to eq('TestCat')
+    expect(JSON.parse(response.body)['message']).to eq('Pet info has been updated')
   end
 
   it 'returns accepted status' do
