@@ -11,13 +11,13 @@ class PetsController < ApplicationController
   end
 
   def create
-    @pet = Pet.create(quote_params)
+    @pet = Pet.create(pet_params)
     json_response(@pet)
   end
 
   def update
     @pet = Pet.find(params[:id])
-    @pet.update(quote_params)
+    @pet.update(pet_params)
   end
 
   def destroy
@@ -26,8 +26,8 @@ class PetsController < ApplicationController
   end
 
   def random
-    @pet. Pet.find(rand(Pet.first.id..Pet.last.id))
-    json_response(@pet)  
+    @pet = Pet.find(rand((Pet.first.id)..(Pet.last.id)))
+    json_response(@pet)
   end
 
 private
